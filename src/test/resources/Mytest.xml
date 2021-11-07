@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoSuite">
+	<test name="OrangeHRMLogin">
+		<classes>
+			<class name="com.Hari.Test.OrangeHRM">
+				<methods>
+
+					<include name="LaunchApp" />
+					<include name="EnterLoginDetails" />
+					<include name="VerifyLogin" />
+
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+	
+	<test name="OrangeHRMMyinfo">
+		<classes>
+			<class name="com.Hari.Test.OrangeHRM">
+				<methods>
+
+					<include name="LaunchApp" />
+					<include name="EnterLoginDetails" />
+					<include name="NavigatingToMyinfo" />
+					<include name="VerfyMyInfo" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	 <!-- <test name="TestGoogle">
+		<classes>
+			
+			<class name="com.Hari.Test.FirstTest" >
+			<methods>
+
+					<include name="TestGoogle" />
+					
+					<include name="TestFacebook" />
+
+				</methods>
+			</class>
+			
+		</classes>
+	</test>  -->
+	
+</suite> 
